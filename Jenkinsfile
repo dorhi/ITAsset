@@ -4,8 +4,8 @@ pipeline {
         nodejs 'NodeJS 20' // Jenkins에 등록한 NodeJS 도구 호출
     }
     environment {
-        TARGET_SERVER = '192.168.1.100' // 👈 실제 가상 머신(운영 서버) IP 입력
-        TARGET_USER   = 'ubuntu'
+        TARGET_SERVER = '10.40.0.193' // 👈 실제 가상 머신(운영 서버) IP 입력
+        TARGET_USER   = 'saea'
         DEPLOY_PATH   = '/opt/itasset'
     }
     stages {
