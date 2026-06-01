@@ -1,0 +1,27 @@
+[Unit]
+Description=SAE-A IT Asset Management Spring Boot Application
+After=network.target mysql.service
+
+[Service]
+User=ubuntu
+Group=ubuntu
+# 권한 문제가 발생할 경우를 대비하여 작업 디렉토리 지정
+WorkingDirectory=/opt/itasset/backend
+
+# 배포된 JAR 파일 실행 경로 (경로는 실제 서버 환경에 맞게 수정)
+ExecStart=/usr/bin/java -jar /opt/itasset/backend/target/backend-0.0.1-SNAPSHOT.jar
+
+# 환경 변수로 DB 정보 주입 (application.yml 이 이를 참조함)
+Environment="DB_HOST=db.sae-a.com"
+Environment="DB_PORT=1433"
+Environment="DB_NAME=REQUEST"
+Environment="DB_USER=gains"
+Environment="DB_PASSWORD=tpdk1503$"
+Environment="SERVER_PORT=8999"
+
+SuccessExitStatus=143
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

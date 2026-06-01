@@ -1,0 +1,113 @@
+2026-03-26T14:57:23.036+09:00  INFO 50504 --- [main] com.saea.itasset.ItassetApplication      : Starting ItassetApplication using Java 17.0.18 with PID 50504 (E:\Vibe\ITASSET\backend\target\classes started by koseok in E:\Vibe\ITASSET\backend)
+2026-03-26T14:57:23.039+09:00 DEBUG 50504 --- [main] com.saea.itasset.ItassetApplication      : Running with Spring Boot v3.2.4, Spring v6.1.5
+2026-03-26T14:57:23.040+09:00  INFO 50504 --- [main] com.saea.itasset.ItassetApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-03-26T14:57:23.693+09:00  WARN 50504 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.saea.itasset]' package. Please check your configuration.
+2026-03-26T14:57:24.111+09:00  INFO 50504 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-26T14:57:24.121+09:00  INFO 50504 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-26T14:57:24.122+09:00  INFO 50504 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2026-03-26T14:57:24.180+09:00  INFO 50504 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-26T14:57:24.181+09:00  INFO 50504 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1087 ms
+2026-03-26T14:57:24.722+09:00  INFO 50504 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-03-26T14:57:24.734+09:00  INFO 50504 --- [main] com.saea.itasset.ItassetApplication      : Started ItassetApplication in 2.192 seconds (process running for 2.507)
+2026-03-26T14:57:29.664+09:00  INFO 50504 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-26T14:57:29.664+09:00  INFO 50504 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-26T14:57:29.665+09:00  INFO 50504 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-03-26T14:57:29.738+09:00 DEBUG 50504 --- [http-nio-8080-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-26T14:57:29.739+09:00 DEBUG 50504 --- [http-nio-8080-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [EXEC ITM_USER_INFO ?]
+2026-03-26T14:57:29.743+09:00  INFO 50504 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-26T14:57:30.011+09:00  INFO 50504 --- [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: de1378d9-768d-4523-a95e-77940d18034a
+2026-03-26T14:57:30.013+09:00  INFO 50504 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-26T15:14:07.089+09:00 DEBUG 50504 --- [http-nio-8080-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-26T15:14:07.091+09:00 DEBUG 50504 --- [http-nio-8080-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [EXEC ITM_USER_INFO ?]
+2026-03-26T15:17:55.215+09:00  INFO 50504 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-26T15:17:55.218+09:00  INFO 50504 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-26T15:18:03.451+09:00  INFO 56712 --- [main] com.saea.itasset.ItassetApplication      : Starting ItassetApplication using Java 17.0.18 with PID 56712 (E:\Vibe\ITASSET\backend\target\classes started by koseok in E:\Vibe\ITASSET\backend)
+2026-03-26T15:18:03.452+09:00 DEBUG 56712 --- [main] com.saea.itasset.ItassetApplication      : Running with Spring Boot v3.2.4, Spring v6.1.5
+2026-03-26T15:18:03.454+09:00  INFO 56712 --- [main] com.saea.itasset.ItassetApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-03-26T15:18:04.066+09:00  WARN 56712 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.saea.itasset]' package. Please check your configuration.
+2026-03-26T15:18:04.491+09:00  INFO 56712 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-26T15:18:04.503+09:00  INFO 56712 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-26T15:18:04.503+09:00  INFO 56712 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2026-03-26T15:18:04.559+09:00  INFO 56712 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-26T15:18:04.561+09:00  INFO 56712 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1051 ms
+2026-03-26T15:18:05.094+09:00  INFO 56712 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-03-26T15:18:05.104+09:00  INFO 56712 --- [main] com.saea.itasset.ItassetApplication      : Started ItassetApplication in 2.159 seconds (process running for 2.51)
+2026-03-26T15:30:02.440+09:00  INFO 56712 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-26T15:30:02.441+09:00  INFO 56712 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-26T15:30:02.443+09:00  INFO 56712 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-03-26T15:30:04.419+09:00 DEBUG 56712 --- [http-nio-8080-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-26T15:30:04.420+09:00 DEBUG 56712 --- [http-nio-8080-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [EXEC ITM_USER_INFO ?]
+2026-03-26T15:30:04.423+09:00  INFO 56712 --- [http-nio-8080-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-26T15:30:04.664+09:00  INFO 56712 --- [http-nio-8080-exec-5] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: b138d311-38d5-467a-82f5-be2100b3b705
+2026-03-26T15:30:04.667+09:00  INFO 56712 --- [http-nio-8080-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-26T15:33:29.630+09:00  INFO 56712 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-26T15:33:29.633+09:00  INFO 56712 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-26T15:33:38.065+09:00  INFO 17268 --- [main] com.saea.itasset.ItassetApplication      : Starting ItassetApplication using Java 17.0.18 with PID 17268 (E:\Vibe\ITASSET\backend\target\classes started by koseok in E:\Vibe\ITASSET\backend)
+2026-03-26T15:33:38.067+09:00 DEBUG 17268 --- [main] com.saea.itasset.ItassetApplication      : Running with Spring Boot v3.2.4, Spring v6.1.5
+2026-03-26T15:33:38.068+09:00  INFO 17268 --- [main] com.saea.itasset.ItassetApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-03-26T15:33:38.670+09:00  WARN 17268 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.saea.itasset]' package. Please check your configuration.
+2026-03-26T15:33:39.081+09:00  INFO 17268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-26T15:33:39.094+09:00  INFO 17268 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-26T15:33:39.094+09:00  INFO 17268 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2026-03-26T15:33:39.153+09:00  INFO 17268 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-26T15:33:39.154+09:00  INFO 17268 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1033 ms
+2026-03-26T15:33:39.695+09:00  INFO 17268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-03-26T15:33:39.705+09:00  INFO 17268 --- [main] com.saea.itasset.ItassetApplication      : Started ItassetApplication in 2.138 seconds (process running for 2.45)
+2026-03-26T15:33:59.533+09:00  INFO 17268 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-26T15:33:59.534+09:00  INFO 17268 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-26T15:33:59.535+09:00  INFO 17268 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-03-26T15:33:59.610+09:00 DEBUG 17268 --- [http-nio-8080-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-26T15:33:59.611+09:00 DEBUG 17268 --- [http-nio-8080-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [EXEC ITM_USER_INFO ?]
+2026-03-26T15:33:59.614+09:00  INFO 17268 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-26T15:33:59.884+09:00  INFO 17268 --- [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: a0ab639e-ae14-4110-88d6-3d5fb0c251a3
+2026-03-26T15:33:59.887+09:00  INFO 17268 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-26T15:34:40.107+09:00 DEBUG 17268 --- [http-nio-8080-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-26T15:34:40.107+09:00 DEBUG 17268 --- [http-nio-8080-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [EXEC ITM_USER_INFO ?]
+2026-03-26T15:34:53.872+09:00 DEBUG 17268 --- [http-nio-8080-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-26T15:34:53.872+09:00 DEBUG 17268 --- [http-nio-8080-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [EXEC ITM_USER_INFO ?]
+2026-03-26T15:35:24.972+09:00 DEBUG 17268 --- [http-nio-8080-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-26T15:35:24.973+09:00 DEBUG 17268 --- [http-nio-8080-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [EXEC ITM_USER_INFO ?]
+2026-03-26T15:37:31.810+09:00  INFO 17268 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-26T15:37:31.813+09:00  INFO 17268 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-26T15:37:39.928+09:00  INFO 63200 --- [main] com.saea.itasset.ItassetApplication      : Starting ItassetApplication using Java 17.0.18 with PID 63200 (E:\Vibe\ITASSET\backend\target\classes started by koseok in E:\Vibe\ITASSET\backend)
+2026-03-26T15:37:39.931+09:00 DEBUG 63200 --- [main] com.saea.itasset.ItassetApplication      : Running with Spring Boot v3.2.4, Spring v6.1.5
+2026-03-26T15:37:39.932+09:00  INFO 63200 --- [main] com.saea.itasset.ItassetApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-03-26T15:37:40.534+09:00  WARN 63200 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.saea.itasset]' package. Please check your configuration.
+2026-03-26T15:37:40.955+09:00  INFO 63200 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-26T15:37:40.967+09:00  INFO 63200 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-26T15:37:40.967+09:00  INFO 63200 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2026-03-26T15:37:41.026+09:00  INFO 63200 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-26T15:37:41.026+09:00  INFO 63200 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1041 ms
+2026-03-26T15:37:41.582+09:00  INFO 63200 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-03-26T15:37:41.592+09:00  INFO 63200 --- [main] com.saea.itasset.ItassetApplication      : Started ItassetApplication in 2.189 seconds (process running for 2.499)
+2026-03-26T15:37:42.794+09:00  INFO 63200 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-26T15:37:42.794+09:00  INFO 63200 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-26T15:37:42.796+09:00  INFO 63200 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-03-26T15:37:46.440+09:00 DEBUG 63200 --- [http-nio-8080-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-26T15:37:46.441+09:00 DEBUG 63200 --- [http-nio-8080-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [EXEC ITM_USER_INFO ?]
+2026-03-26T15:37:46.444+09:00  INFO 63200 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-26T15:37:46.721+09:00  INFO 63200 --- [http-nio-8080-exec-3] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: cf103a20-316d-4a78-a646-4692765dd12e
+2026-03-26T15:37:46.723+09:00  INFO 63200 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-26T15:54:42.774+09:00  INFO 63200 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-26T15:54:42.778+09:00  INFO 63200 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-26T15:54:50.921+09:00  INFO 63364 --- [main] com.saea.itasset.ItassetApplication      : Starting ItassetApplication using Java 17.0.18 with PID 63364 (E:\Vibe\ITASSET\backend\target\classes started by koseok in E:\Vibe\ITASSET\backend)
+2026-03-26T15:54:50.921+09:00 DEBUG 63364 --- [main] com.saea.itasset.ItassetApplication      : Running with Spring Boot v3.2.4, Spring v6.1.5
+2026-03-26T15:54:50.923+09:00  INFO 63364 --- [main] com.saea.itasset.ItassetApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-03-26T15:54:51.550+09:00  WARN 63364 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.saea.itasset]' package. Please check your configuration.
+2026-03-26T15:54:51.967+09:00  INFO 63364 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-26T15:54:51.979+09:00  INFO 63364 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-26T15:54:51.980+09:00  INFO 63364 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2026-03-26T15:54:52.034+09:00  INFO 63364 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-26T15:54:52.035+09:00  INFO 63364 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1056 ms
+2026-03-26T15:54:52.567+09:00  INFO 63364 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-03-26T15:54:52.579+09:00  INFO 63364 --- [main] com.saea.itasset.ItassetApplication      : Started ItassetApplication in 2.172 seconds (process running for 2.487)
+2026-03-26T15:55:00.175+09:00  INFO 63364 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-26T15:55:00.175+09:00  INFO 63364 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-26T15:55:00.176+09:00  INFO 63364 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-03-26T15:55:02.233+09:00 DEBUG 63364 --- [http-nio-8080-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2026-03-26T15:55:02.234+09:00 DEBUG 63364 --- [http-nio-8080-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [EXEC ITM_USER_INFO ?]
+2026-03-26T15:55:02.237+09:00  INFO 63364 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-26T15:55:02.482+09:00  INFO 63364 --- [http-nio-8080-exec-3] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: b34f2651-8cee-4967-9761-109277e2b889
+2026-03-26T15:55:02.485+09:00  INFO 63364 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-26T16:19:38.582+09:00  INFO 63364 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-26T16:19:38.585+09:00  INFO 63364 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -1,0 +1,14 @@
+2026-06-01T15:26:04.521+09:00  INFO 49992 --- [main] com.saea.itasset.ItassetApplication      : Starting ItassetApplication using Java 17.0.12 with PID 49992 (E:\Vibe\ITASSET\backend\target\classes started by koseok in E:\Vibe\ITASSET)
+2026-06-01T15:26:04.523+09:00 DEBUG 49992 --- [main] com.saea.itasset.ItassetApplication      : Running with Spring Boot v3.2.4, Spring v6.1.5
+2026-06-01T15:26:04.524+09:00  INFO 49992 --- [main] com.saea.itasset.ItassetApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-01T15:26:05.391+09:00  WARN 49992 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.saea.itasset]' package. Please check your configuration.
+2026-06-01T15:26:05.962+09:00  INFO 49992 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8999 (http)
+2026-06-01T15:26:05.973+09:00  INFO 49992 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-01T15:26:05.973+09:00  INFO 49992 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2026-06-01T15:26:06.062+09:00  INFO 49992 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-01T15:26:06.063+09:00  INFO 49992 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1470 ms
+2026-06-01T15:26:07.332+09:00  INFO 49992 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8999 (http) with context path ''
+2026-06-01T15:26:07.348+09:00  INFO 49992 --- [main] com.saea.itasset.ItassetApplication      : Started ItassetApplication in 3.426 seconds (process running for 3.859)
+2026-06-01T15:29:30.501+09:00  INFO 49992 --- [http-nio-8999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-01T15:29:30.502+09:00  INFO 49992 --- [http-nio-8999-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-01T15:29:30.503+09:00  INFO 49992 --- [http-nio-8999-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms

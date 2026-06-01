@@ -1,0 +1,90 @@
+exec ITTM_SEARCH_EQUIPMENT_USER_DATA @EQUIPMENTNO=N'0001',@CO=N'KOR',@COMPANYNO=N'101',@MemberID=N'koseok',@UserNm=N'',@ENo=N'02-101-001321',@Location=N''
+
+select * from ITTM_EQUIPMENT_USER_DATA where ENO = '02-101-001321'
+select * from ITTM_EQUIPMENT_USER_DATA where ENO = '02-101-001068'
+select * from ITTM_EQUIPMENT_DATA where ENO = '02-101-001321'
+
+
+exec ITTM_SET_EQUIPMENT_USER_DATA_M @PROC_TYPE=N'I',@ENO=N'02-101-001321',@USESTARTDATE=N'20260325',@UNO=N'U-20260325-1',@COUNTRY=N'KOR',@COMPANY_NO=N'101',@SAEA_GCODE=N'KR2197',@REMARK=N'',@USEENDDATE=N'',@MEMBERID=N'koseok',@OLD_ENO=N'02-101-001321',@USER=N'koseok'
+
+--사용자 찾기
+exec ITTM_SEARCH_USER_INFO @USER_NAME=N'고석',@CompanyNo=N'101'
+
+--반납
+exec ITTM_LIST_EQUIP_RETURN_M @ENO=N'02-101-001321',@UNO=N'U-20260325-3',@USER=N'koseok'
+
+--count
+SELECT CONVERT(VARCHAR(8), GETDATE(), 112) AS ST_DATE, ISNULL(COUNT(*), 0) + 1 AS UCNT  FROM ITTM_EQUIPMENT_USER_DATA WITH(NOLOCK) WHERE USESTARTDATE= CONVERT(VARCHAR(8), GETDATE(), 112)
+
+--사용자등록
+exec ITTM_SET_EQUIPMENT_USER_DATA_M @PROC_TYPE=N'I',@ENO=N'02-101-001321',@USESTARTDATE=N'20260325',@UNO=N'U-20260325-3',@COUNTRY=N'KOR',@COMPANY_NO=N'101',@SAEA_GCODE=N'KR2199',@REMARK=N'',@USEENDDATE=N'',@MEMBERID=N'koseok',@OLD_ENO=N'02-101-001321',@USER=N'koseok'
+
+
+
+
+exec ITTM_SEARCH_EQUIPMENT_USER_DATA @EQUIPMENTNO=N'0002',@CO=N'KOR',@COMPANYNO=N'101',@MemberID=N'koseok',@UserNm=N'',@ENo=N'',@Location=N''
+
+
+
+exec ITTM_GET_CODE_LIST_NEW @GROUP_NO=N'0001',@Country=N'KOR',@CompanyNo=N'101'
+exec ITTM_GET_CODE_LIST_NEW @GROUP_NO=N'0006',@Country=N'KOR',@CompanyNo=N'101'
+17480
+
+
+begin tran
+
+
+rollback
+
+
+select * from ITTM_EQUIPMENT_USER_DATA
+exec ITM_SEARCH_EQ_USER_DATA @EQUIPMENTNO=N'',@CO=N'KOR',@COMPANYNO=N'101',@MemberID=N'koseok',@UserNm=N'',@ENo=N'001321',@Location=N''
+
+
+---GEMINI 에게 제공할 프로시저
+
+--사용자 정보
+EXEC request.dbo.ITM_USER_INFO @USER -- ID 또는 한글이름, 없을 경우 전체 조회 됨 / 사용자 로그인할때도 사용
+-- exec request.dbo.ITM_USER_INFO 'koseok'
+
+--자산 반납
+ EXEC REQUEST.DBO.ITM_RETURN_EQ  @ENO, @MEMBER , @USER  --자산번호, 사용자 ID, 등록자 ID
+
+ --사용자 자산배정 번호 생성 @UNO
+ EXEC REQUEST.DBO.ITM_UNO_CREATE
+
+ 
+
+ --자산등록 
+ EXEC REQUEST.[dbo].[ITTM_SET_EQUIPMENT_USER_DATA_M]  
+     @PROC_TYPE  -- VARCHAR(1)   'I' 무조건 입력  
+   , @ENO        -- VARCHAR(50)  QR에서 스캔한 값
+   , @UNO        -- VARCHAR(50)  @UNO 생성 프로시저(REQUEST.DBO.ITM_UNO_CREATE)에서 가져오기 
+   , @COUNTRY    -- VARCHAR(4)  'KOR' 무조건 입력
+   , @COMPANY_NO -- VARCHAR(4)   사용자 정보의 COMPANY_CODE 컬럼
+   , @SAEA_GCODE -- VARCHAR(8)   사용자 정보의 SAEA_GCODE 컬럼
+   , @USESTARTDATE -- VARCHAR(8)  안 넣어도 됨
+   , @USEENDDATE   -- VARCHAR(8)  안 넣어도 됨
+   , @MEMBERID     -- NVARCHAR(50) 사용자 ID 사용자 정보의 USERID   
+   , @REMARK       -- NVARCHAR(MAX)    안 넣어도 됨
+   , @OLD_ENO      -- VARCHAR(50)   QR에서 스캔한 값    
+   , @USER         -- VARCHAR(20)  시스템 로그인한 사용자 ID
+
+--자산 조회
+exec ITM_SEARCH_EQ_USER_DATA @ENo -- 자산번호(QR 스캔한값)
+exec ITM_SEARCH_EQ_USER_DATA '02-101-001068'
+exec ITM_SEARCH_EQ_USER_DATA '02-101-001321'
+exec ITM_SEARCH_EQ_USER_DATA '02-101-000376'
+
+
+
+SELECT * 
+                     , MIN(DELFLAG) OVER() MIN_DEL
+
+                 FROM DBO.ITTM_EQUIPMENT_USER_DATA 
+                 WHERE ENO = '02-101-000376'
+
+
+
+
+
