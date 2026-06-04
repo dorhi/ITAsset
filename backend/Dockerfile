@@ -1,4 +1,4 @@
-FROM eclipse-temurin:21-jre-alpine  # 👈 자바 21 규격 적용
+FROM eclipse-temurin:21-jre-alpine
 WORKDIR /app
 COPY target/backend-0.0.1-SNAPSHOT.jar app.jar
 RUN mkdir logs
