@@ -25,7 +25,7 @@ const Login = () => {
   return (
     <div className="login-container">
       <div className="login-card">
-        <h2>IT 자산 관리 로그인2222</h2>
+        <h2>IT 자산 관리 로그인</h2>
         <p>계정 정보를 입력해주세요</p>
         
         {error && <div className="error-msg">{error}</div>}
