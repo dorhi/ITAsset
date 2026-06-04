@@ -15,17 +15,7 @@ pipeline {
             }
         }
 
-        stage('2. Backend JAR Build') {
-            steps {
-                dir('backend') {
-                    // Maven Wrapper 실행 권한 부여 후 빌드
-                    sh 'chmod +x mvnw'
-                    sh './mvnw clean package -DskipTests'
-                }
-            }
-        }
-
-        stage('3. Transfer Files to Server') {
+        stage('2. Transfer Files to Server') {
             steps {
                 sshagent(['operating-server-ssh']) {
                     // 1. 운영 서버 배포 디렉토리 생성
@@ -37,7 +27,7 @@ pipeline {
             }
         }
 
-        stage('4. Docker Container Build & RUN') {
+        stage('3. Docker Container Build & RUN') {
             steps {
                 sshagent(['operating-server-ssh']) {
                     // 3. 운영 서버에서 Docker Compose를 빌드하여 백그라운드 구동 및 오래된 미사용 이미지 정리
