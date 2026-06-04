@@ -17,22 +17,22 @@ pipeline {
 
         stage('2. Transfer Files to Server') {
             steps {
-                sshagent(['operating-server-ssh']) {
+                withCredentials([sshUserPrivateKey(credentialsId: 'operating-server-ssh', keyFileVariable: 'SSH_KEY')]) {
                     // 1. 운영 서버 배포 디렉토리 생성
-                    sh "ssh -o StrictHostKeyChecking=no ${TARGET_USER}@${TARGET_SERVER} 'mkdir -p ${DEPLOY_PATH}'"
+                    sh "ssh -i ${SSH_KEY} -o StrictHostKeyChecking=no ${TARGET_USER}@${TARGET_SERVER} 'mkdir -p ${DEPLOY_PATH}'"
                     
                     // 2. 빌드된 파일과 소스코드를 운영 서버로 동기화 (.env 및 불필요 파일 제외)
-                    sh "rsync -avz --delete --exclude='.git' --exclude='node_modules' --exclude='.env' -e 'ssh -o StrictHostKeyChecking=no' ./ ${TARGET_USER}@${TARGET_SERVER}:${DEPLOY_PATH}/"
+                    sh "rsync -avz --delete --exclude='.git' --exclude='node_modules' --exclude='.env' -e \"ssh -i ${SSH_KEY} -o StrictHostKeyChecking=no\" ./ ${TARGET_USER}@${TARGET_SERVER}:${DEPLOY_PATH}/"
                 }
             }
         }
 
         stage('3. Docker Container Build & RUN') {
             steps {
-                sshagent(['operating-server-ssh']) {
+                withCredentials([sshUserPrivateKey(credentialsId: 'operating-server-ssh', keyFileVariable: 'SSH_KEY')]) {
                     // 3. 운영 서버에서 Docker Compose를 빌드하여 백그라운드 구동 및 오래된 미사용 이미지 정리
                     sh """
-                    ssh -o StrictHostKeyChecking=no ${TARGET_USER}@${TARGET_SERVER} '
+                    ssh -i ${SSH_KEY} -o StrictHostKeyChecking=no ${TARGET_USER}@${TARGET_SERVER} '
                         cd ${DEPLOY_PATH} &&
                         docker compose up -d --build &&
                         docker image prune -f
