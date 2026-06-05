@@ -3,8 +3,8 @@ pipeline {
 
     environment {
         // ⚠️ 운영 서버의 실제 IP와 SSH 접속 계정명으로 변경해 주세요.
-        TARGET_SERVER = '10.40.1.83' 
-        TARGET_USER   = 'udocker'        
+        TARGET_SERVER = '10.40.0.193' 
+        TARGET_USER   = 'saea'        
         DEPLOY_PATH   = '/opt/itasset'
     }
 
