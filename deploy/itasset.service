@@ -12,7 +12,7 @@ WorkingDirectory=/opt/itasset/backend
 ExecStart=/usr/bin/java -jar /opt/itasset/backend/target/backend-0.0.1-SNAPSHOT.jar
 
 # 환경 변수 파일 로드 (.env 파일을 활용한 설정 주입)
-EnvironmentFile=-/opt/itasset/backend/.env
+EnvironmentFile=/opt/itasset/backend/.env
 
 SuccessExitStatus=143
 Restart=on-failure
