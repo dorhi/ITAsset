@@ -11,12 +11,8 @@ WorkingDirectory=/opt/itasset/backend
 # 배포된 JAR 파일 실행 경로 (경로는 실제 서버 환경에 맞게 수정)
 ExecStart=/usr/bin/java -jar /opt/itasset/backend/target/backend-0.0.1-SNAPSHOT.jar
 
-# 환경 변수로 DB 정보 주입 (application.yml 이 이를 참조함)
-Environment="DB_HOST=db.sae-a.com"
-Environment="DB_PORT=1433"
-Environment="DB_NAME=IT_ASSET"
-Environment="DB_USER=gains"
-Environment="DB_PASSWORD=tpdk1503$"
+# 환경 변수 파일 로드 (.env 파일을 활용한 설정 주입)
+EnvironmentFile=-/opt/itasset/backend/.env
 
 SuccessExitStatus=143
 Restart=on-failure
