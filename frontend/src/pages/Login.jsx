@@ -12,7 +12,7 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     if (!loginId.trim() || !password.trim()) return;
-    
+
     try {
       await login(loginId, password);
       navigate('/');
@@ -25,17 +25,17 @@ const Login = () => {
   return (
     <div className="login-container">
       <div className="login-card">
-        <h2>IT자산 관리 로그인</h2>
+        <h2>IT자산 관리 로그인222</h2>
         <p>계정 정보를 입력해주세요</p>
-        
+
         {error && <div className="error-msg">{error}</div>}
-        
+
         <form onSubmit={handleLogin} className="login-form">
           <div className="form-group">
             <label>아이디 (ID)</label>
-            <input 
-              type="text" 
-              value={loginId} 
+            <input
+              type="text"
+              value={loginId}
               onChange={(e) => setLoginId(e.target.value)}
               placeholder="아이디를 입력하세요"
               required
@@ -43,9 +43,9 @@ const Login = () => {
           </div>
           <div className="form-group">
             <label>비밀번호 (Password)</label>
-            <input 
-              type="password" 
-              value={password} 
+            <input
+              type="password"
+              value={password}
               onChange={(e) => setPassword(e.target.value)}
               placeholder="비밀번호를 입력하세요"
               required
